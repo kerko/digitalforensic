@@ -1,1 +1,47 @@
-\section{Techniques}
+\section{Further techniques}
+There are several other ways to retrieve passwords, data and metadata to
+and from encrypted files. Proper encryption is not easy and it can be 
+time-consuming, especially if not the whole system is encrypted but 
+individual files.\\
+\subsection{Social engineering and retrieving passwords}
+One way to retrieve the password to encrypted data is to ask the suspect
+to reveal it or to offer a decreased sentence in exchange for the passwords.
+This should be considered especially when the data retrieved through decrypting could be used as digital 
+evidence in other cases.\\
+The simple knowledge, that the suspect has used an encryption program and
+perhaps even a program for secure deletion could already be of great use for the
+investigators. By emplyoing forensic techniques to retrieve the timestamps 
+of these programms, in combination with other information like a timeline
+of the incident, an initial suspicion can be hardened. More Information can be
+gathered, by looking at the actions and filesused at roughly the same time as the encryption programm.\\
+Methods not covered by our experiment also include attacks directed towards 
+the password, like Brute-Force, Rainbow-table attacks and dictionary attacks.
+These methods aim directly at the password or the password-hash to break it.
+To accelerate these methods, it is useful to create a list of potential
+password, custom-built to the suspect. While generating this list it is useful 
+to include names, birth-dates of family members or pets and
+other information retrieved through social networks and the social 
+environment of the suspect.
+During this reconnaissance it is also useful to extract all strings from all
+the confiscated devices and use them as a list. This could be useful since
+the suspect might have written and saved the password at some point.
+In special cases, where the encrypted data could have a very big impact on the
+process of the case, it could be useful to apply dumpster diving. 
+That means to look for information in the dumpster of the suspect.
+The holy grail of dumpster diving is, to find the password written on a piece
+of paper.
+Aside that are already created lists with standard and often used passwords
+available.
+(For example under https://wiki.skullsecurity.org/Passwords)
+
+\subsection{Retrieving the plaintext}
+Often the plaintext, or part of the plaintext can be retrieved from several different places, not only
+the encrypted data. This includes intentionall or unintentionall Backups
+on internal or external devices and on cloud-systems. 
+This could be especially useful on devices where automatic synchronization with
+a profile exists, for example to google-cloud.
+Other places to look for include temp-folders, thumbnail folders for pictures, and
+the history of certain programs used to open the files.
+
+There are several paper describing a few of these techniques in more detail.
+\\paper einfügen
