@@ -33,7 +33,7 @@ pagebackref=true, hyperindex=true,bookmarksopen=true]{hyperref}
 %% Block style paragrphs
 \setlength\parskip{\medskipamount}
 \setlength\parindent{0pt}
-
+\newcommand{\xfnm}[1][]{\ifx!#1!\else\unskip,\space#1\fi}
 \makeatletter
 \renewcommand{\topfraction}{.9}
 \renewcommand{\bottomfraction}{.8}
@@ -52,7 +52,7 @@ pagebackref=true, hyperindex=true,bookmarksopen=true]{hyperref}
 
 %% Glossary Section
 %%% Abreviations
-\newacronym{VM}{VM}{Virtual Machine}
+\newacronym{FDE}{FDE}{full disk encryption}
 
  
 
