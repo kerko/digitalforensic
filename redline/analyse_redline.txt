@@ -1,11 +1,11 @@
 Informationen für outlook.pst gefunden
-- vollständiger Pfad gefunden "C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\outlook.pst"
-- die Größe "845 Megabytes"
+- vollstaendiger Pfad gefunden "C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\outlook.pst"
+- size "845 Megabytes"
 - MD5 "1b55acad78e1ea68e3f99d3103d53deb"
 - erstellt Datei: 	  2014-11-25 15:52:04Z
 - zuletzt modifiziert: 	  2014-11-25 15:52:36Z
 - zuletzt zugegriffen: 	  2014-11-25 15:52:04Z
-- zuletzt geändert: 	  2014-11-25 15:52:36Z
+- zuletzt geaendert: 	  2014-11-25 15:52:36Z
 - Username: BUILTIN\Administrators
 - Security ID: S-1-5-32-544
 - Security Type: SidTypeAlias
@@ -15,7 +15,7 @@ Informationen für outlook.pst gefunden
 - File Name: outlook.pst
 - File Extension: pst
 
-Dies sind Informationen, die zu der verschlüsselten Datei outlook.pst gefunden wurden. 
+Dies sind Informationen, die zu der verschluesselten Datei outlook.pst gefunden wurden. 
 Unter Prefetch/AccessedFiles ist zu sehen, dass auf outlook.pst durch Firefox zugegriffen wurde. 
 
 In der Timeline folgende Informationen gefunden:
