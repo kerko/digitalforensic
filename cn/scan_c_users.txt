@@ -1,0 +1,40 @@
+C:\Users\All Users\Microsoft\Network\Downloader\qmgr0.dat
+C:\Users\All Users\Microsoft\Network\Downloader\qmgr1.dat
+C:\Users\All Users\Microsoft\RAC\PublishedData\RacWmiDatabase.sdf
+C:\Users\All Users\Microsoft\RAC\StateData\RacDatabase.sdf
+C:\Users\All Users\Microsoft\Search\Data\Applications\Windows\MSS.log
+C:\Users\All Users\Microsoft\Search\Data\Applications\Windows\MSS00005.log
+C:\Users\All Users\Microsoft\Search\Data\Applications\Windows\MSSres00001.jrs
+C:\Users\All Users\Microsoft\Search\Data\Applications\Windows\MSSres00002.jrs
+C:\Users\All Users\Microsoft\Search\Data\Applications\Windows\tmp.edb
+C:\Users\All Users\Microsoft\Search\Data\Applications\Windows\Windows.edb
+C:\Users\All Users\Microsoft\Search\Data\Applications\Windows\Projects\SystemIndex\Indexer\CiFiles\00010004.ci
+C:\Users\All Users\Microsoft\Windows\Power Efficiency Diagnostics\energy-ntkl.etl
+C:\Users\Default\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\Default\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\Fawkes\NTUSER.DAT
+C:\Users\Fawkes\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\Fawkes\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\Fawkes\AppData\Local\Microsoft\Media Player\CurrentDatabase_372.wmdb
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows\UsrClass.dat{a2358c47-74b3-11e4-bbc9-0800277b8f97}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows\UsrClass.dat{a2358c47-74b3-11e4-bbc9-0800277b8f97}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows\Explorer\thumbcache_256.db
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows\Explorer\thumbcache_32.db
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows\Explorer\thumbcache_96.db
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\edb.log
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\edb00001.log
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\edbres00001.jrs
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\edbres00002.jrs
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\outlook.pst
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\WindowsMail.MSMessageStore
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\Backup\new\edb00001.log
+C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\Backup\new\WindowsMail.MSMessageStore
+C:\Users\Fawkes\AppData\Local\Temp\Microsoft .NET Framework 4 Setup_4.0.30319\netfx_Extended_x64.msi
+C:\Users\Fawkes\AppData\Roaming\Mozilla\Firefox\Profiles\fpyhpuxj.default\cookies.sqlite
+C:\Users\Fawkes\AppData\Roaming\Mozilla\Firefox\Profiles\fpyhpuxj.default\healthreport.sqlite
+C:\Users\Fawkes\AppData\Roaming\Mozilla\Firefox\Profiles\fpyhpuxj.default\places.sqlite
+C:\Users\Fawkes\AppData\Roaming\Mozilla\Firefox\Profiles\fpyhpuxj.default\webappsstore.sqlite
+C:\Users\Fawkes\AppData\Roaming\Mozilla\Firefox\Profiles\fpyhpuxj.default\storage\persistent\moz-safe-about+home\idb\818200132aebmoouht.sqlite
+C:\Users\Fawkes\Documents\dilbert_strip7.pdf
+C:\Users\Fawkes\Downloads\setup.exe
+C:\Users\Public\Recorded TV\Sample Media\win7_scenic-demoshort_raw.wtv
