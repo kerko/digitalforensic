@@ -12,7 +12,7 @@ All of these features harden the detectability of a True Crypt container but the
 
 Encrypted files contain a high entropy so one approach could be calculating the entropy value for every file in the suspected area and investigate files with high results.
 Also checking if the file-header matches the given extension could lead to results.
-It is also documented \cite{truecrypt_containerSize} that True Crypt containers always have a size which is dividable by 512 and in addition are always bigger than 292 KB.
+It is also documented that True Crypt containers always have a size which is dividable by 512 and in addition are always bigger than 292 KB.\cite{truecrypt:sourceCode}
 
 The TCHunt tool combines all of these techniques to identify True Crypt containers during its diskscan. It should be mentioned that TCHunt only checks files bigger than 5 MB.
 Since all of these file checks are possible with a command line, an own script could be written forr this task.
