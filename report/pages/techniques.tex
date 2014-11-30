@@ -4,7 +4,9 @@ There are several other ways to handle and analyze encrypted data. Proper encryp
 Maybe the easiest way to obtain passwords to encrypted data is to ask the suspect to reveal it or to offer a decreased sentence in exchange for the passwords.
 This should be considered especially when the data retrieved through decryption could be used as digital evidence in other cases.
 In case the suspect is indeed innocent, he is likely willing to give away his password to drop the charges against him.\\
-In the united Kingdom, a organization or a person can be required to reveal the password by law. This is because of the Part III of the Regulation of Investigatory Powers Act (RIPA), which is active since  the 1\textsuperscript{st} of October 2007.\cite{passwordsInUK}
+In the united Kingdom, a organization or a person can be required to reveal the password by law. This is because of the Part III of the Regulation of Investigatory Powers Act (RIPA), which is active since  the 1\textsuperscript{st} of October 2007.\cite{TheEffectOfFileAndDiskEncryption}
+
+Depending on the case, it is useful to apply techniques to extract the password out of the memory or out for memory files. This is especially useful when the encrypted files are mounted to the system. The chance to obtain the password depends on several factors like the system state.\cite{PersistenceOfMomory}
 
 Methods not covered by our experiment also include attacks directed towards the password, like Brute-Force attacks, rainbow-table attacks and dictionary attacks. These methods are using a list of already known passwords (rainbow-table, dictionary) or they are using all possible passwords (brute-force) in an attempt to find the right password or password hash.
 To accelerate these methods, it is useful to create a list of potential passwords, custom-built to the suspect. While generating this list, it is recommended to include names, birth-dates of family members or pets and other information retrieved through social networks and the social environment of the suspect. During this reconnaissance of the suspect it is also useful to extract all strings from all the confiscated devices and use them as a list. This could be useful since the suspect might have written and saved the password at some point. In addition to that it could be useful to apply dumpster diving, that means to look for information in the dumpster of the suspect. 
@@ -13,7 +15,6 @@ Aside that, there are already created lists with standard and often used passwor
 While this could lead to the correct password and therefore to the immediate decryption of the data, these methods often require a big amount of
 computing power and can take very long.
 Especially the brute-force method should be only used, after all other ways to retrieve the encrypted data have failed.
-
 
 \subsection{Retrieving the plaintext}
 Sometimes the plain data can be obtained through several ways, for example the thumbnails of pictures like we showed during our experiment. This also includes intentional or unintentional Backups on internal or external devices and on cloud-systems.
