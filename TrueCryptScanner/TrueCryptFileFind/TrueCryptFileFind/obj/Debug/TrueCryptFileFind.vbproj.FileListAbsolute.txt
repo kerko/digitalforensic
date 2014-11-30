@@ -1,0 +1,9 @@
+c:\users\admin\documents\visual studio 2013\Projects\TrueCryptFileFind\TrueCryptFileFind\bin\Debug\TrueCryptFileFind.exe.config
+c:\users\admin\documents\visual studio 2013\Projects\TrueCryptFileFind\TrueCryptFileFind\bin\Debug\TrueCryptFileFind.exe
+c:\users\admin\documents\visual studio 2013\Projects\TrueCryptFileFind\TrueCryptFileFind\bin\Debug\TrueCryptFileFind.pdb
+c:\users\admin\documents\visual studio 2013\Projects\TrueCryptFileFind\TrueCryptFileFind\bin\Debug\TrueCryptFileFind.xml
+c:\users\admin\documents\visual studio 2013\Projects\TrueCryptFileFind\TrueCryptFileFind\obj\Debug\TrueCryptFileFind.Resources.resources
+c:\users\admin\documents\visual studio 2013\Projects\TrueCryptFileFind\TrueCryptFileFind\obj\Debug\TrueCryptFileFind.vbproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2013\Projects\TrueCryptFileFind\TrueCryptFileFind\obj\Debug\TrueCryptFileFind.exe
+c:\users\admin\documents\visual studio 2013\Projects\TrueCryptFileFind\TrueCryptFileFind\obj\Debug\TrueCryptFileFind.xml
+c:\users\admin\documents\visual studio 2013\Projects\TrueCryptFileFind\TrueCryptFileFind\obj\Debug\TrueCryptFileFind.pdb
