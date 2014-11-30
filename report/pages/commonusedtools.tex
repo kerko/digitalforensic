@@ -1,1 +1,18 @@
-\section{Commonly used tools}
+\section{True Crypt}
+Although the development of the True Crypt software is discontinued since the 28th of May, 2014, it is still one of the most popular encryption software.
+It supports encryption for full disks, single files and also containers with the feature of hiding the created containers or partitions.
+The available encryption algorithms are AES, Serpent and Twofish. Additionally, there are some combinations possible.
+The software runs on Microsoft Windows, Linux, Mac OS X, DragonFly BSD and Android either as a installed or as a portable version.\cite{truecrypt}
+
+A True Crypt container is a fixed size volume which can be created and mounted by the main software.
+It contains no file-header nor any detectable sequence for identification.
+The name and extension of the container can be arbitrary.
+
+All of these features harden the detectability of a True Crypt container but there are ways to identify them.
+
+Encrypted files contain a high entropy so one approach could be calculating the entropy value for every file in the suspected area and investigate files with high results.
+Also checking if the file-header matches the given extension could lead to results.
+It is also documented \cite{truecrypt_containerSize} that True Crypt containers always have a size which is dividable by 512 and in addition are always bigger than 292 KB.
+
+The TCHunt tool combines all of these techniques to identify True Crypt containers during its diskscan. It should be mentioned that TCHunt only checks files bigger than 5 MB.
+Since all of these file checks are possible with a command line, an own script could be written forr this task.
