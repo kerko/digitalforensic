@@ -11,7 +11,7 @@ surfed around the internet to collect data on the machine. During this period we
 the data from the .rar file. We opend the copied files several times and dismounted all the truecrypt volumes afterwards.
 Then we used the tool Redline to collect all the information of the system to analyse them offline on a different
 machine.
-\sucsection{Execution}
+\subsection{Execution}
 The analysis of the browser history showed, that the suspect had accessed several webpages regarding truecrypt. This included web-searches about the security of truecrypt and how to use it to encrypt files. However, the browser history showed no sign of an acctual download of truecrypt. Beside that, the suspect downloaded a single, encrypted .rar file from a website and roughly one minute later the winrar.exe installer.
 
 After that we took a look at the prefetches and found four files from truecrypt. Since we did not found any other files related to truecrypt, we can assume that the program was used over a different channel, for example with a USB-stick. Furthermore we found entrances of three different Truecrypt volumes both in the Registry (All in all we found 6 keys belonging to truecrypt) and the Volumes-section. The volumes were named S,V and Y.
