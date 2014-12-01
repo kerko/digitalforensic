@@ -1,14 +1,16 @@
 \section{Experiment}
 \subsection{Description and Expected outcome}
-We are looking at the live image and the collected data from a system involved in a criminal case. Our goal is to find
-all three hidden volumes we created during the setup and to create a timeline of the fraud with the metadata collected with
-the tool Redline.
+We are looking at the live image and the collected data from a system involved in a criminal case. Our goal is to find all three hidden volumes we created during the setup and to create a timeline of the fraud with the metadata collected with the tool Redline. 
+%(-cn-/)
+We also want try to find as much as possible information from the truecrypt containers without breaking the encryption. That means that we want to scan the operations system for metadata and try to find information like last access time, filenames and possible content from the files. These information are represented in timeline.
+%(/-cn-)
 
 \subsection{Setup}
-We used a Windows 7 machine, virtualized with the freeware programm VM Virtual Box. After setting up a clean system, we 
-surfed around the internet to collect data on the machine. During this period we also downloaded an encrypted
-.rar file, called ImportantWorkFiles.rar. Afterwards we created three different Truecrypt-container, in which we extracted
-the data from the .rar file. We opened the copied files several times and dismounted all the Truecrypt volumes afterwards.
+We used a Windows 7 machine, virtualized with the freeware program Oracle Virtual Box. After setting up a clean system, we surfed around the internet to collect data on the machine. During this period we also downloaded an encrypted .rar file, called ImportantWorkFiles.rar. Afterwards we created three different Truecrypt-container, in which we extracted the data from the .rar file.
+%(-cn-/)
+We used the standard settings to encrypt the containers which is the AES encryption algorithm with the RIPEMD-160 hash algorithm.
+%(/-cn-)
+We opened the copied files several times and dismounted all the Truecrypt volumes afterwards.
 Then we used the tool Redline to collect all the information of the system to analyse them offline on a different
 machine.
 \subsection{Execution}
@@ -19,6 +21,11 @@ After that, we took a look at the prefetches and found four files from Truecrypt
 Based on our results so far, we can conclude that the suspect has used Truecrypt from a medium like a USB-stick on his computer. Since we did not find any uninstall-keys in the registry, it is likely that Truecrypt was installed on the computer in the recent time, or the suspect has removed those keys. Since we found two different Truecrypt-prefetch files, is it likely, that the suspect has executed Truecrypt at least 2 times. However this tells us not, how often the suspect has used the functions of Truecrypt, since the .pf files are created, only when the program starts.
 
 -------Hier könnte dann das ergebnis von tchunt reinkommen
+(-cn-/)
+To find possible truecrypt containers we used the tool TcHunt 1.6. This tool try to discover truecrypt containers
+with the help of four propertys. At first it execute a modulo operation with 512 and check if the result is zero. This technique works with dynamic 
+growing containers too, because truecrypt increase the filesize in exactly 1 kilobyte steps. At the second step it check if the file is smaller than 15 megabyte
+(/-cn-)
 
 After identifying two possible Truecrypt-container, we searched for the MD5-value of both files at virustotal.com. Of course this gave us no result, since these files are unique. The timestamps showed, that the files creation and the modified date are only a few seconds apart. Next we took a look on the files opened at roughly the same time. 
 
