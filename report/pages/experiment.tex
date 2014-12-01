@@ -8,24 +8,24 @@ the tool Redline.
 We used a Windows 7 machine, virtualized with the freeware programm VM Virtual Box. After setting up a clean system, we 
 surfed around the internet to collect data on the machine. During this period we also downloaded an encrypted
 .rar file, called ImportantWorkFiles.rar. Afterwards we created three different Truecrypt-container, in which we extracted
-the data from the .rar file. We opend the copied files several times and dismounted all the truecrypt volumes afterwards.
+the data from the .rar file. We opened the copied files several times and dismounted all the Truecrypt volumes afterwards.
 Then we used the tool Redline to collect all the information of the system to analyse them offline on a different
 machine.
 \subsection{Execution}
-The analysis of the browser history showed, that the suspect had accessed several webpages regarding truecrypt. This included web-searches about the security of truecrypt and how to use it to encrypt files. However, the browser history showed no sign of an acctual download of truecrypt. Beside that, the suspect downloaded a single, encrypted .rar file from a website and roughly one minute later the winrar.exe installer.
+The analysis of the browser history showed, that the suspect had accessed several webpages regarding Truecrypt. This included web-searches about the security of Truecrypt and how to use it to encrypt files. However, the browser history showed no sign of an actual download of Truecrypt. Beside that, the suspect downloaded a single, encrypted .rar file from a website and roughly one minute later the winrar.exe installer.
 
-After that we took a look at the prefetches and found four files from truecrypt. Since we did not found any other files related to truecrypt, we can assume that the program was used over a different channel, for example with a USB-stick. Furthermore we found entrances of three different Truecrypt volumes both in the Registry (All in all we found 6 keys belonging to truecrypt) and the Volumes-section. The volumes were named S,V and Y.
+After that, we took a look at the prefetches and found four files from Truecrypt. Since we did not found any other files related to Truecrypt, we can assume that the program was used over a different channel, for example on a USB-stick. Furthermore we found entrances of three different Truecrypt volumes both in the Registry (All in all we found 6 keys belonging to Truecrypt) and the Volumes-section. The volumes were named S,V and Y.
 
-Based on our results so far, we can conclude that the suspect has used truecrypt from a medium like a usb-stick on his computer. Since we did not find any uninstall-keys in the registry, it is likely that truecrypt was installed on the computer in the recent time, or that the suspect has removed those keys. Since we found two different truecrypt-prefetch files, is it likely, that the suspect has executed truecrypt at least 2 times. However this tells us not, how often the suspect has used the funtions of truecrypt, since the .pf files are created, only when the program starts.
+Based on our results so far, we can conclude that the suspect has used Truecrypt from a medium like a USB-stick on his computer. Since we did not find any uninstall-keys in the registry, it is likely that Truecrypt was installed on the computer in the recent time, or the suspect has removed those keys. Since we found two different Truecrypt-prefetch files, is it likely, that the suspect has executed Truecrypt at least 2 times. However this tells us not, how often the suspect has used the functions of Truecrypt, since the .pf files are created, only when the program starts.
 
 -------Hier könnte dann das ergebnis von tchunt reinkommen
 
-After identifying two possible Truecrypt-container, we searched for the md5-value of both files at virustotal.com. Of course this gave us no result, since these files are unique. The timestamps showed, that the files creation and the modified date are only a few seconds apart. Next we took a look on the files opend at roughly the same time. 
+After identifying two possible Truecrypt-container, we searched for the MD5-value of both files at virustotal.com. Of course this gave us no result, since these files are unique. The timestamps showed, that the files creation and the modified date are only a few seconds apart. Next we took a look on the files opened at roughly the same time. 
 
-The accessed files of the prefetch files gave us 6 entries for out encrypted volumes. These were 4 different files, 2 pictures and two videos.
-The suspect has opend these four files out of the truecrypt volume Y and the two video files out of the truecrypt volume V. The two videos were opened with the Windows media player.
+The accessed files of the prefetch files gave us 6 entries for our encrypted volumes. These were 4 different files, 2 pictures and two videos.
+The suspect has opened these four files out of the Truecrypt volume Y and the two video files out of the Truecrypt volume V. The two videos were opened with the Windows media player.
 
-Since we now knew, that the suspect encrypted and opend pictures, we extracted the thumbcache-files of the Windows explorer. We open them with the open source tool Thumbcache viewer and were able to look at the thumbs. While it is not easy to determine which thumbmail belongs to which orginal file, in some cases this is not necessary. If the suspect is accused of having child pornography material, the finding of thumbnails with such content could be sufficient.
+Since we now knew, that the suspect encrypted and opened pictures, we extracted the thumbcache-files of the Windows explorer. We open them with the open source tool Thumbcache viewer and were able to look at the thumbs. While it is not easy to determine which thumbnail belongs to which original file, in some cases this is not necessary. If the suspect is accused of having child pornography material, the finding of thumbnails with such content could be sufficient.
 
 
 \subsection{Outcome}
