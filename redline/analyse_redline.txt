@@ -1,3 +1,10 @@
+- first we looked for truecrypt files and found 2 of 3 with help of tchunt. Now we had names of 
+the encrypted files. It can be said that tchunt can find files which are encrypted with truecrypt 
+in more than 50 percentages of the cases. To find the other truecrypt files "Prof. Dr. Nesslinger" 
+wrote a script.  
+
+-In Redline we could looked for the names we found in tchunt and got several information in Redline.
+
 Informationen für outlook.pst gefunden
 - vollständiger Pfad gefunden "C:\Users\Fawkes\AppData\Local\Microsoft\Windows Mail\outlook.pst"
 - die Größe "845 Megabytes"
