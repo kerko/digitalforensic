@@ -6,34 +6,51 @@ We also want try to find as much as possible information from the truecrypt cont
 %(/-cn-)
 
 \subsection{Setup}
-We used a Windows 7 machine, virtualized with the freeware program Oracle Virtual Box. After setting up a clean system, we surfed around the internet to collect data on the machine. During this period we also downloaded an encrypted .rar file, called ImportantWorkFiles.rar. Afterwards we created three different Truecrypt-container, in which we extracted the data from the .rar file.
+We used a Windows 7 machine, virtualized with the freeware program Oracle Virtual Box. After setting up a clean system, we surfed around the Internet to collect data on the machine. 
+%(-cn-/)
+These steps were necessary to simulate are more realistic environment.
+%(/-cn-)
+During this period we also downloaded an encrypted .rar file, called ImportantWorkFiles.rar. Afterwards we created three different Truecrypt-container, in which we extracted the data from the .rar file.
 %(-cn-/)
 We used the standard settings to encrypt the containers which is the AES encryption algorithm with the RIPEMD-160 hash algorithm.
 %(/-cn-)
-We opened the copied files several times and dismounted all the Truecrypt volumes afterwards.
-Then we used the tool Redline to collect all the information of the system to analyse them offline on a different
-machine.
+Afterwards we opened the copied files several times and dismounted all the Truecrypt volumes.
+Then we used the tool Redline to collect all the information of the system to analyse them offline on a different machine.
+
 \subsection{Execution}
 The analysis of the browser history showed, that the suspect had accessed several webpages regarding Truecrypt. This included web-searches about the security of Truecrypt and how to use it to encrypt files. However, the browser history showed no sign of an actual download of Truecrypt. Beside that, the suspect downloaded a single, encrypted .rar file from a website and roughly one minute later the winrar.exe installer.
-
+\\
 After that, we took a look at the prefetches and found four files from Truecrypt. Since we did not found any other files related to Truecrypt, we can assume that the program was used over a different channel, for example on a USB-stick. Furthermore we found entrances of three different Truecrypt volumes both in the Registry (All in all we found 6 keys belonging to Truecrypt) and the Volumes-section. The volumes were named S,V and Y.
-
+\\
 Based on our results so far, we can conclude that the suspect has used Truecrypt from a medium like a USB-stick on his computer. Since we did not find any uninstall-keys in the registry, it is likely that Truecrypt was installed on the computer in the recent time, or the suspect has removed those keys. Since we found two different Truecrypt-prefetch files, is it likely, that the suspect has executed Truecrypt at least 2 times. However this tells us not, how often the suspect has used the functions of Truecrypt, since the .pf files are created, only when the program starts.
-
--------Hier könnte dann das ergebnis von tchunt reinkommen
-(-cn-/)
-To find possible truecrypt containers we used the tool TcHunt 1.6. This tool try to discover truecrypt containers
-with the help of four propertys. At first it execute a modulo operation with 512 and check if the result is zero. This technique works with dynamic 
-growing containers too, because truecrypt increase the filesize in exactly 1 kilobyte steps. At the second step it check if the file is smaller than 15 megabyte
-(/-cn-)
-
+\\
+%-------Hier könnte dann das ergebnis von tchunt reinkommen
+%(-cn-/)
+\subsubsection{TCHunt}
+To find possible Truecrypt containers we used the tool TCHunt 1.6. This tool try to discover Truecrypt containers. For an easy use, we executed the program on the life system, an run it from a USB stick. But you can also run it on a local pc to scan an image from the hard disk of the target. We discovered 2 of the 3 containers. We only couldn't find the container which was named \textbf{dilbert\_strip7.pdf}. We expect that TCHunt didn't found the container because of the small file size of only 2 MB. That's why we wrote a small visual basic program, which scans the hard disk for files were the result from a modulo 1024 operation is zero and the files size is bigger than 282 KB. With this small program we found all three Truecrypt containers, but also a lot of false positive results. All in all we got only for the home directory of the user 40 results and for the complete system more than 2500. This simple program is also an option to find all containers, but not an efficient way to discover them, because of the huge number of false positive results.  
+\\
+\subsubsection{Finding Truecrypt Keyfiles}
+Truecrypt allows you to encrypt your files with so called Keyfiles instead of normal passwords. The advantage is that you can easy use a very strong password without keep in mind the whole password. It is also easy to hide Keyfiles on the hard disk or on an external drive. Truecrypt has a generator for Keyfiles. You have the possibility to generate Keyfiles for all the three supported hash algorithm (RIPEMD-160, SHA-512 and Whirlpool). This generator is a weak point in Truecrypt, because the Keyfiles have anytime the same size of 64 bytes (tested with Truecrypt 7.1.a). That's why we enhanced our Truecrypt container scan program to search for files that have an exact file size of 64 bytes.
+\\
+The results were promising, we tested the program on a intensive used computer with windows 8.1 running and got as result only 37 possible Keyfiles. This number of files is pretty god to handle because you can test these files pretty fast with Truecrypt.
+%(/-cn-)
+\subsubsection{unknown title}
 After identifying two possible Truecrypt-container, we searched for the MD5-value of both files at virustotal.com. Of course this gave us no result, since these files are unique. The timestamps showed, that the files creation and the modified date are only a few seconds apart. Next we took a look on the files opened at roughly the same time. 
-
+\\
 The accessed files of the prefetch files gave us 6 entries for our encrypted volumes. These were 4 different files, 2 pictures and two videos.
 The suspect has opened these four files out of the Truecrypt volume Y and the two video files out of the Truecrypt volume V. The two videos were opened with the Windows media player.
-
+\\
 Since we now knew, that the suspect encrypted and opened pictures, we extracted the thumbcache-files of the Windows explorer. We open them with the open source tool Thumbcache viewer and were able to look at the thumbs. While it is not easy to determine which thumbnail belongs to which original file, in some cases this is not necessary. If the suspect is accused of having child pornography material, the finding of thumbnails with such content could be sufficient.
 
+%(-cn-/)
+\subsubsection{Further techniques}
+Memory dump with DumpIt
+Elcomsoft Forensic Disk Decryptor
+Hiberfile
+Memory Dump 
+Posibility to try to extrac keys 
+1 KB Key - Files
 
-\subsection{Outcome}
+%(/-cn-)
+%----\subsection{Outcome} obsolet
 
