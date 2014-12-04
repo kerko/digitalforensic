@@ -12,7 +12,7 @@ All of these features harden the detectability of a Truecrypt container but ther
 Encrypted files contain a high entropy so one approach could be calculating the entropy value for every file in the suspected area and investigate files with high results.
 Also checking if the file-header matches the given extension could lead to results.
 It is also documented that Truecrypt containers always have a size which is dividable by 512.
-%and in addition are always bigger than 292 KB for cointainers with
+and are always bigger than 292 KB for cointainers with
 %(-cn-/) 
 This technique works with dynamic growing containers too, because Truecrypt increase the filesize in exactly 1 KB steps. In addition TCHunt also check if the filesize is bigger than 292 KB for containers with the filesystem FAT and if the filesystem NTFS is chosen than the minimal container size is 3792 KB.
 %(/-cn-)
