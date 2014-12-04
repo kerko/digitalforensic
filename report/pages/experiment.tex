@@ -1,4 +1,4 @@
-﻿\section{Experiment}
+\section{Experiment}
 \subsection{Description and Expected outcome}
 We are looking at the live image and the collected data from a system involved in a criminal case. Our goal is to find all three hidden volumes, we created during the setup and to create a timeline of the fraud, using the metadata collected with Redline. 
 %(-cn-/)
@@ -24,7 +24,7 @@ After that, we took a look at the prefetch files and found four files from Truec
 
 Based on our results so far, we can conclude that the suspect has used Truecrypt from a medium like a USB-stick on his computer. Since we did not find any uninstall-keys in the  Windows Registry, it is likely that Truecrypt was installed on the computer in recent times, or the suspect has removed those keys. Since we found two different Truecrypt prefetch files, is it likely, that the suspect has executed Truecrypt at least 2 times. However this does not tell us, how often the suspect has used the functions of Truecrypt, since the \verb+.pf+ files are created, only when the program starts.
 
-%-------Hier könnte dann das ergebnis von tchunt reinkommen
+%-------Hier koennte dann das ergebnis von tchunt reinkommen
 %(-cn-/)
 \subsubsection{TCHunt}
 To find possible Truecrypt containers we used the tool TCHunt 1.6. This tool tries to discover Truecrypt containers. For an easy use, we executed the program on the live system, an run it from a USB stick. But you can also run it on a local pc to scan an image of the hard disk from the target. We discovered 2 of the 3 containers. We only couldn't find the container which was named \verb+dilbert\_strip7.pdf+. We suspect that TCHunt didn't found the container because of the small file size of only 2 MB. That's why we wrote a small visual basic program, which scans the hard disk for files were the following condition  \[filesize \% 1024 = 0\] returned true and the files size is bigger than 282 KB. With this small program we found all three Truecrypt containers, but also a lot of false positive results. All in all we got only for the home directory of the user 40 results and for the complete system more than 2500. This simple program is also an option to find all containers, but not an efficient way to discover them, because of the huge number of false positive results.  
