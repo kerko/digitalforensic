@@ -44,10 +44,14 @@ Since we now knew, that the suspect encrypted and opened pictures, we extracted 
 
 %(-cn-/)
 \subsubsection{Getting information from memory}
-Truecrypt has the possibility to keep key information in the memory. This allows you to mount containers, which are encrypted with the same password / Keyfile without to re-enter the password. But if you are not careful with this option others persons could restore your password.
-
+Truecrypt has the possibility to keep key information in the memory. This allows you to mount containers, which are encrypted with the same password / Keyfile without to re-enter the password. But if you are not careful with this option others persons could restore your password. There exists some powerful tools that are able to restore the passwords. We tired the the tool Elcomsoft Forensic Disc Decryptor.
+\cite{elcomsoft:forensicDiskDecrypt}
+Memory dump
 It exist various number of possibilities to get information from the memory. One way, if the computer is still running and unlocked is to make a memory dump. A powerful and easy to use toll is DumpIt. This tool provides a memory dump in the .raw file format.
-Memory dump with DumpIt
+
+Hiberfile.sys
+Another way to get information is to use the hiberfile.sys
+
 Elcomsoft Forensic Disk Decryptor
 Hiberfile
 Memory Dump 
