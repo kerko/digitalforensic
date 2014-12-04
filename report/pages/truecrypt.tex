@@ -4,20 +4,25 @@ It supports encryption for full disks, single files and also containers with the
 The available encryption algorithms are AES, Serpent and Twofish. Additionally, there are some combinations possible.
 The software runs on Microsoft Windows, Linux, Mac OS X, DragonFly BSD and Android either as a installed or a portable version.\cite{wiki:truecrypt}
 A Truecrypt container is a fixed size volume which can be created and mounted by the main software.
-It contains no file-header nor any detectable sequence for identification.
+It contains no file header nor any detectable sequence for identification.
 The name and extension of the container can be arbitrary.
 All of these features harden the detectability of a Truecrypt container but there are ways to identify them.
 
 Encrypted files contain a high entropy so one approach could be calculating the entropy value for every file in the suspected area and investigate files with high results.
-Also checking if the file-header matches the given extension could lead to results.
-It is also documented that Truecrypt containers always have a size which is dividable by 512 and are always bigger than 292 KB for cointainers with
+Also checking if the file header matches the given extension could lead to results.
+It is also documented that Truecrypt containers always have a size which is dividable by 512 and are always bigger than 292 KB.
 %(-cn-/) 
-This technique works with dynamic growing containers too, because Truecrypt increase the file size in exactly 1 KB steps. In addition TCHunt also check if the file size is bigger than 292 KB for containers with the filesystem FAT and if the filesystem NTFS is chosen than the minimal container size is 3792 KB.
+This technique works with dynamic growing containers too, because Truecrypt increase the file size in exactly 1 KB steps. 
+In addition TCHunt also checks if the file size is bigger than 292 KB for containers with the FAT filesystem. 
+If the NTFS filesystem is chosen, the minimal container size is 3792 KB.
 %(/-cn-)
 \cite{truecrypt:sourceCode}
 
-The TCHunt tool combines all of these techniques to identify Truecrypt containers during its disk scan. It should be mentioned that TCHunt only checks files bigger than 5 MB.
+The TCHunt tool combines all of these techniques to identify Truecrypt containers during its disk scan. 
+It should be mentioned that TCHunt only checks files bigger than 5 MB.
 %(-cn-/)
-That's why TCHunt wouldn't find small containers. One explanation for that behavior is that, if you include very small files in the search you could get a huge number of false positive results. In the lot of cases a Truecrypt container is much bigger than 292 KB or 5 MB. 
+That's why TCHunt couldn't find small containers. 
+One explanation for that behavior is, if you include very small files in the search you could get a huge number of false positive results. 
+In most cases, a Truecrypt container is much bigger than 292 KB or 5 MB. 
 %(/-cn-)
 Since all of these file checks are possible with a command line, an own script could be written for this task.
