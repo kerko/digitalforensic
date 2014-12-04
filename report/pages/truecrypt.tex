@@ -12,17 +12,17 @@ Encrypted files contain a high entropy so one approach could be calculating the 
 Also checking if the file header matches the given extension could lead to results.
 It is also documented that Truecrypt containers always have a size which is dividable by 512 and are always bigger than 292 KB.
 %(-cn-/) 
-This technique works with dynamic growing containers too, because Truecrypt increase the file size in exactly 1 KB steps. 
-In addition TCHunt also checks if the file size is bigger than 292 KB for containers with the FAT filesystem. 
+These facts also apply to dynamic growing containers, because Truecrypt increase the file size in exactly 1 KB steps. 
+In addition, TCHunt checks if the file size is bigger than 292 KB for containers with the FAT filesystem. 
 If the NTFS filesystem is chosen, the minimal container size is 3792 KB.
 %(/-cn-)
 \cite{truecrypt:sourceCode}
 
-The TCHunt tool combines all of these techniques to identify Truecrypt containers during its disk scan. 
+The TCHunt tool combines all of these facts to identify Truecrypt containers during its disk scan. 
 It should be mentioned that TCHunt only checks files bigger than 5 MB.
 %(-cn-/)
-That's why TCHunt couldn't find small containers. 
+That's why TCHunt couldn't find small containers in our experiment. 
 One explanation for that behavior is, if you include very small files in the search you could get a huge number of false positive results. 
 In most cases, a Truecrypt container is much bigger than 292 KB or 5 MB. 
 %(/-cn-)
-Since all of these file checks are possible with a command line, an own script could be written for this task.
+Since all of these file checks are possible with a common command line tools, a self written script cpuld also be used for these tasks.
