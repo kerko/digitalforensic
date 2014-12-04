@@ -1,22 +1,29 @@
 \section{Further techniques}
-There are several other ways to handle and analyze encrypted data. Proper encryption is not easy and it can be time-consuming, especially if not the whole system is encrypted but individual files. In this section we describe further techniques to to retrieve passwords, data and metadata to and from encrypted files.
+There are several other ways to handle and analyze encrypted data. Proper encryption is not easy and it can be time-consuming, especially if not the whole system is encrypted but individual files. In this section we describe further techniques to to retrieve passwords, data and metadata from encrypted files.
 \subsection{Social engineering and retrieving passwords}
-Maybe the easiest way to obtain passwords to encrypted data is to ask the suspect to reveal it or to offer a decreased sentence in exchange for the passwords.
+The easiest way to obtain passwords of encrypted data is to ask the suspect to reveal it or offer a decreased sentence in exchange.
 This should be considered especially when the data retrieved through decryption could be used as digital evidence in other cases.
 In case the suspect is indeed innocent, he is likely willing to give away his password to drop the charges against him.
 
-In the united Kingdom, a organization or a person can be required to reveal the password by law. This is because of the Part III of the Regulation of Investigatory Powers Act (RIPA), which is active since  the 1\textsuperscript{st} of October 2007.\cite{lowman2010effect}
+In the United Kingdom, a organization or a person can be forced to reveal the password by law. This is because of part III of the Regulation of Investigatory Powers Act (RIPA), which is active since  the 1\textsuperscript{st} of October 2007.\cite{lowman2010effect}
 
-Depending on the case, it is useful to apply techniques to extract the password out of the memory or out for memory files. This is especially useful when the encrypted files are mounted to the system. The chance to obtain the password depends on several factors like the systems state.\cite{MaartmannMoe2009S132}
+Depending on the case, it is useful to apply techniques to extract the password from memory or out of memory files. This is especially useful when the encrypted files are mounted to the system. The chance to obtain the password depends on several factors like the systems state.\cite{MaartmannMoe2009S132}
 
-Methods not covered by our experiment also include attacks directed towards the password, like Brute-Force attacks, rainbow-table attacks and dictionary attacks. These methods are using a list of already known passwords (rainbow-table, dictionary) or they are using all possible passwords (brute-force) in an attempt to find the right password or password hash.
-To accelerate these methods, it is useful to create a list of potential passwords, custom-built to the suspect. While generating this list, it is recommended to include names, birth-dates of family members or pets and other information retrieved through social networks and the social environment of the suspect. During this reconnaissance of the suspect it is also useful to extract all strings from all the confiscated devices and use them as a list. This could be useful since the suspect might has saved the password at some point. In addition, it could be useful to apply dumpster diving, that means to look for information in the dumpster of the suspect. 
+Methods not covered by our experiment also include attacks directed towards the password, like Brute-Force attacks, rainbow-table attacks and dictionary attacks. 
+These methods are using a list of already known passwords (rainbow-table, dictionary) or all possible passwords (brute-force) in an attempt to find the right password or password hash.
+To accelerate these methods, it is useful to create a list of potential passwords, custom-built to the suspect. 
+While generating this list, it is recommended to include names, birth-dates of family members or pets and other information retrieved through social networks and the social environment of the suspect. 
+During this reconnaissance, it is also useful to extract all strings from all the confiscated devices and use them as a list. 
+This could be useful since the suspect might has saved the password at some point. 
+In addition, it could be useful to apply dumpster diving.
+That means to look for information in the suspects dumpster. 
 The holy grail of dumpster diving is, to find the password written on a piece of paper. 
 Aside from that, there are already created lists with standard and often used passwords available.
-While this could lead to the correct password and therefore to the immediate decryption of the data, these methods often require a big amount of
-computing power and can take very long.
-Especially the brute-force method should be only used, after all other ways to retrieve the encrypted data have failed.
+While this could lead to the correct password and therefore to the immediate decryption of the data, these methods often require a big amount of computing power and can take a very long time.
+Especially the brute-force method should be only used, after all other ways to retrival have failed.
 
 \subsection{Retrieving the plaintext}
-Sometimes the plain data can be obtained through several ways, for example the thumbnails of pictures like we showed during our experiment. This also includes intentional or unintentional Backups on internal or external devices and on cloud-systems.
-This could be especially useful on devices where automatic synchronization with an online cloud exists (Dropbox, Google, Apple,...). Other places to look for include temporary folders, the history of certain programs used to open the files and system specific databases like the thumbnail databases under Windows.
+Sometimes the plain data can be obtained through several ways, for example the thumbnails of pictures like we showed during our experiment. 
+This also includes intentional or unintentional Backups on internal or external devices and on cloud-systems.
+This could be especially useful on devices where automatic synchronization with an online cloud exists (Dropbox, Google, Apple,...). 
+Other places to look for include temporary folders, the history of certain programs used to open the files and system specific databases like the thumbnail databases under Windows.
