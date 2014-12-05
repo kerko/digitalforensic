@@ -1,7 +1,7 @@
 
 \subsection{Timeline}
 
-Time stamps are used to assign an event to an unique moment.
+Time stamps are used to allocate events to a specified time.
 With the help of these time stamps a timeline can be created. 
 In this timeline you can see which action was done to an object at a specific time and which action followed after a specific action. 
 The timeline also  represents, what kind of action (created, modified, accessed) had taken place. 
@@ -52,9 +52,9 @@ We got these various time stamps with the help of the tool “Redline”.
 A timeline is used to reconstructed the order of actions the suspect did, which includes objects created, accessed or modified.
 
 Different problems can occur during the analysis of the timeline.
-A problem in the NTFS file system is that it can take up to one hour to update the corresponding time stamp after it was accessed.\cite{FileTimes} 
+A problem in the NTFS file system is that it can take up to one hour to update the corresponding time stamp after it was accessed.\foodnote{FileTimes} 
 Furthermore, a criminal can change the MACtime values on purpose to obscure examiners. 
-One program which can change the time stamps is named “BulkFileChanger” by NirSoft.\cite{BulkFileChanger}
+One program which can change the time stamps is named BulkFileChanger\foodnote{http://www.nirsoft.net/utils/bulk_file_changer.html} by NirSoft.
 BulkFileChanger can overwrite the create, modify and access time. 
 One more problem which exists is that sometimes it is difficult to know if an object was accessed by an application or a person. 
 All of these issues need to be considered in order to get an accurate result. 
@@ -62,7 +62,7 @@ All of these issues need to be considered in order to get an accurate result.
 There are important hints for a digital investigator. 
 These hints can tell what happened with a file. 
 The digital investigator can recognize through the combination of Mactimes which actions happened to a file, e.g. if the modified time is before the created time, then the file was copied from one system or moved from one partition to another partition. 
-More of these methods are described in \cite{alazab2009effective}.
+More of these methods are described in \foodnote{alazab2009effective}.
 
 \begin{figure}[tbph]
 	\centering
