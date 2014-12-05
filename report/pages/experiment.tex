@@ -44,8 +44,12 @@ Since we now knew, that the suspect encrypted and opened pictures, we extracted 
 
 %(-cn-/)
 \subsubsection{Getting information from memory}
-Truecrypt has the possibility to keep key information in the memory. This allows you to mount containers, which are encrypted with the same password / Keyfile without to re-enter the password. But if you are not careful with this option others persons could restore your password. There exists some powerful tools that are able to restore the passwords. We tired the the tool Elcomsoft Forensic Disc Decryptor.
-\cite{elcomsoft:forensicDiskDecrypt}
-Memory dump
+Truecrypt has the possibility to keep key information in the memory. This allows you to mount containers, which are encrypted with the same password / Keyfile without to reenter the password. But if you are not careful with this option it exists the possibility to restore your password. We used the tool Elcomsoft Forensic Disc Decryptor.
+\cite{elcomsoft:forensicDiskDecrypt} 
+This tool support key extraction from Truecrypt and BitLocker files. You can chose between two different types of key extractions methods. At first we produced with the small tool DumpIt a memory dump in the .raw file format and used this file with the Forensic Disc Decryptor.
+This scenario only works if the computer from the target is running and not looked. But Forensic Disc Decryptor also provide the key extraction from the hiberfile.sys. The scenario is more likely, because you don't need a running system. 
+The results were promising, but we could only test the Forensic Disc Decryptor in a limited way, because we had only a trial version. 
+
+
 %(/-cn-)
 
