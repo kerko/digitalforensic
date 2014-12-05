@@ -47,9 +47,7 @@ Since we now knew, that the suspect encrypted and opened pictures, we extracted 
 Truecrypt has the possibility to keep key information in the memory. This allows you to mount containers, which are encrypted with the same password / Keyfile without to reenter the password. But if you are not careful with this option it exists the possibility to restore your password with forensic tools. We used the tool Elcomsoft Forensic Disc Decryptor.
 \cite{elcomsoft:forensicDiskDecrypt} 
 This tool support key extraction from Truecrypt and BitLocker files. You can chose between two different types of key extractions methods. At first we produced with the small tool DumpIt \url{http://www.moonsols.com/resources/} a memory dump in the .raw file format and used this file with the Forensic Disc Decryptor.
-This scenario only works if the computer from the target is running and not looked. But Forensic Disc Decryptor also provide the key extraction from the hiberfile.sys. The scenario is more likely, because you don't need a running system. Sadly we couldn't test this case because VirtualBox didn't provide the Hibernate Mode in Windows with virtual machines. 
-The results were promising, but we could only test the Forensic Disc Decryptor in a limited way and couldn't see all the found results, because we had only a trial version for our tests. Another useful tool for memory forensic seems to be the open source framework Volatility  \url{https://github.com/volatilityfoundation/} which we will test in future work.
-
-
+This scenario only works if the computer from the target is running and not looked. But Forensic Disc Decryptor also provide the key extraction from the hiberfile.sys. The scenario is more likely, because you don't need a running system, but a system which is shutdown in the hibernation mode.  Sadly we couldn't test this case because VirtualBox didn't provide the hibernate mode in Windows with virtual machines. 
+All in all the results were promising, but we could only test the Forensic Disc Decryptor in a limited way and couldn't see all the found results, because we had only a trial version for our tests. Another useful tool for memory forensic, which also provide the analysis of Truecrpyt files is the open source framework Volatility  \url{https://github.com/volatilityfoundation/} which we could test in future work.
 %(/-cn-)
 
