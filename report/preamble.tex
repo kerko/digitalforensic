@@ -2,7 +2,7 @@
 \documentclass[a4paper,11pt,pdftex,english]{article}
 
 
-\usepackage{booktabs}
+%\usepackage{booktabs}
 \usepackage{babel}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -19,7 +19,7 @@
 \usepackage[table]{xcolor}
 \usepackage{varioref}
 \usepackage{url}
-\usepackage{pdfpages}
+%\usepackage{pdfpages}
 \usepackage[bookmarks=true, linkcolor=blue,
 citecolor=blue,urlcolor=blue,colorli nks=true, breaklinks=true,
 pagebackref=true, hyperindex=true,bookmarksopen=true]{hyperref}
@@ -27,16 +27,16 @@ pagebackref=true, hyperindex=true,bookmarksopen=true]{hyperref}
 \newlist{arrowlist}{itemize}{1}
 \setlist[arrowlist]{label=$\Rightarrow$}
 
-\usepackage[acronym, section, nonumberlist]{glossaries}
-%\usepackage{minted}
-%\usemintedstyle{emacs}
+%\usepackage[acronym, section, nonumberlist]{glossaries}
+\usepackage{minted}
+\usemintedstyle{emacs}
 
 
 \frenchspacing
 
 %% Block style paragrphs
 \setlength\parskip{\medskipamount}
-\setlength\parindent{0pt}
+\setlength\parindent{15pt}
 \newcommand{\xfnm}[1][]{\ifx!#1!\else\unskip,\space#1\fi}
 \makeatletter
 \renewcommand{\topfraction}{.9}
@@ -52,11 +52,7 @@ pagebackref=true, hyperindex=true,bookmarksopen=true]{hyperref}
 
 \makeatother
 
-\makeglossaries
 
-%% Glossary Section
-%%% Abreviations
-\newacronym{FDE}{FDE}{full disk encryption}
 
  
 

@@ -25,7 +25,8 @@
 
             Console.WriteLine("Suche beendet")
 
-            Console.WriteLine("Es wurden " & lsFilesFound.Count & " Dateien gefunden")
+            Console.WriteLine("Es wurden " & lsFilesFound.Count &_
+            & " Dateien gefunden")
             Console.WriteLine("in 5 Sek. gehts weiter")
 
             Threading.Thread.Sleep(5000)
@@ -36,7 +37,8 @@
                     Console.WriteLine(Str)
                 Next
 
-                Console.WriteLine("Geben Sie die Datei zum Speichern der Resultate an")
+                Console.WriteLine("Geben Sie die Datei zum " &_
+                " Speichern der Resultate an")
                 strSavePath = Console.ReadLine()
                 storeResult(strSavePath)
                 Console.WriteLine("Finish :-)")
@@ -102,7 +104,8 @@
                     For Each f In IO.Directory.GetFiles(d)
                         Try
                             Dim fi As New IO.FileInfo(f)
-                            If (fi.Length Mod 1024.0) = 0 And fi.Length >= 299098 Then
+                            If (fi.Length Mod 1024.0) = 0 &_
+                            And fi.Length >= 299098 Then
                                 lsFilesFound.Add(f)
                             End If
                         Catch
