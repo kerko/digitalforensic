@@ -48,13 +48,13 @@ We discovered two the three containers.
 The only container we did not find was named \texttt{dilbert\_strip7.pdf}. 
 We suspect that TCHunt did not find the container, because of the small file size of only 2 MB. 
 This is why we wrote a small visual basic program, which scans the hard disk for files where the following condition  \[filesize \% 1024 = 0\] returned true and the files size is bigger than 292 KB. 
-With this small program we found all three Truecrypt containers, but also a lot of false positive. 
+With this small program we found all three Truecrypt containers, but also a lot of false positives. 
 All in all, we got 40 results for the users home directory and for the complete system more than 2500. 
-This simple program is also an option to find all containers, but not an efficient way to discover them, because of the huge number of false positive.  
+This simple program is also an option to find all containers, but not an efficient way to discover them, because of the huge number of false positives.  
 
 \subsubsection{Finding Truecrypt key files}
 Truecrypt allows you to encrypt your files with so called key files, instead of normal passwords. 
-The advantage of this is, that you can easily use a very strong password without keeping in mind. 
+The advantage is, that you can easily use a very strong password without keeping in mind. 
 It is also easy to hide key files on the hard disk or on an external drive, because you can use every possible file on the machine, which does not change the first 1024 bytes, as a key file. 
 But Truecrypt has a generator for key files. 
 You have the possibility to generate key files for all the three supported hash algorithms (RIPEMD-160, SHA-512 and Whirlpool). 
